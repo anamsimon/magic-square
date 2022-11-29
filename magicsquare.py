@@ -12,7 +12,7 @@ def generate_magic_square(N):
         n += 1
         newi, newj = (i-1) % N, (j+1)% N
         if magic_square[newi][newj]:
-             i = (i+ 1) % N
+             i = i+ 1
         else:
             i, j = newi, newj
 
