@@ -36,6 +36,7 @@ def generate_missing_number(magic_square, N, missing_number):
 def print_matrix(square):
     for i in square:
         print('\t'.join(map(str, i)))
+    print('---')
 
 N = int(input("Magic Number N X N ? "))
 
