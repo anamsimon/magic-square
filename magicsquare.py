@@ -8,11 +8,11 @@ def generate_magic_square(N):
     i, j = 0, N//2
 
     while n <= N**2:
-        magic_square[i, j] = n
+        magic_square[i][j] = n
         n += 1
         newi, newj = (i-1) % N, (j+1)% N
-        if magic_square[newi, newj]:
-            i += 1
+        if magic_square[newi][newj]:
+             i = (i+ 1) % N
         else:
             i, j = newi, newj
 
